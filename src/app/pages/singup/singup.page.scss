@@ -1,0 +1,49 @@
+body {
+    font-family: Keania One;
+  }
+  ion-content {
+      --ion-background-color: linear-gradient(#0505a0, #2095cf); /* Degradado de arriba hacia abajo */
+    font-weight: bold; /* Letras más gruesas */
+    text-shadow: 0 0 50px black; /* Borde negro */
+    --ion-font-family: "Keania One", sans-serif; /* Cambio de tipo de letra para la clase .header */
+  }
+  
+  h1 {
+    font-weight: bold; /* Letras más gruesas */
+    text-shadow: 0 0 50px black; /* Borde negro */
+  }
+  
+  ion-item {
+    --background: #ffffff; /* Fondo blanco */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: black;
+    color: rgb(199, 31, 31); /* Texto rojo */
+  
+    border: 3px solid black; /* Borde negro */
+  }
+  ion-button {
+    --background: rgb(199, 31, 31); /* Fondo rojo para el botón */
+    --border-color: black; /* Borde negro para el botón */
+    --color: #ffffff; /* Color de texto blanco */
+    --border-radius: 10px; /* Radio de borde */
+    --border-color:black;
+    font-weight: bold; /* Letras más gruesas */
+  }
+  .header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  
+  .header .sub-title {
+    color: rgb(199, 31, 31); /* Texto azul */
+    font-size: 0.9rem;
+  }
+  
+  .header .title {
+    font-size: 2rem;
+  }
+  
+  /* Añade estilos adicionales aquí si es necesario */
+  

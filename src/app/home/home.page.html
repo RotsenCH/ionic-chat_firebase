@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <ion-title slot="start">
+      Home
+    </ion-title>
+    <ion-button slot="end" fill="solid" (click)="singOut()">Salir</ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list *ngIf="(chatRooms | async) as user$">
+
+    <ion-list-header class="ion-padding-bottom" color="light">
+      Chats
+    </ion-list-header>
+
+    <ion-item
+    *ngFor="let item of user$"
+    (click)="getChat(item)"
+    [detail]="true">
+      <ng-container *ngIf="(item?.user | async) as user">
+        <ion-avatar slot="start">
+          <img [src]="getUser(user)?.photo" />
+        </ion-avatar>
+        <ion-label>
+          {{getUser(user)?.email}}
+          <p>
+            <ion-text>
+              message
+            </ion-text>
+          </p>
+        </ion-label>
+        <ion-text slot="end" color="medium">10:00 AM</ion-text>
+      </ng-container>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
